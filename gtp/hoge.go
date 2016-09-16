@@ -44,13 +44,13 @@ func Run(handle *pcap.Handle) {
     }
 
     // Set filter
-    var filter string = "udp and port 2152"
+    var filter string = "udp and port 2152 or port 2123"
     //var filter string = "udp and port 53"
     err = handle.SetBPFFilter(filter)
     if err != nil {
         log.Fatal(err)
     }
-    fmt.Println("Only capturing UDP port 2152 packets.")
+    fmt.Println("Only capturing UDP port 2152/2123 packets.")
     //fmt.Println("Only capturing UDP port 53 packets.")
 
 	packetSource := gopacket.NewPacketSource(handle, handle.LinkType())
