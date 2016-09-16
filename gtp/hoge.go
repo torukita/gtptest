@@ -2,9 +2,9 @@ package gtp
 
 import (
     "fmt"
-    "github.com/torukita/gopacket"
-    "github.com/torukita/gopacket/pcap"
-    "github.com/torukita/gopacket/layers"
+    "github.com/google/gopacket"
+    "github.com/google/gopacket/pcap"
+    "github.com/google/gopacket/layers"
     _ "strings"
     "log"
     "time"

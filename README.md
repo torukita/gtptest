@@ -1,5 +1,5 @@
 # gtp implementation test for gopacket
 
-This use torukita/gopacket instead of google/gopacket.
+Use google/gopacket by tohru branch in torukita/gopacket
 Currently gtp is under construction.
 
